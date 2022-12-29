@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
-    <title>SPORTWEEB :: Confirmação de Cadastro</title>
+    <title>SPORTWEEB :: Área do cliente :: Dados</title>
     <link rel="apple-touch-icon" sizes="512x512" href="/img/favicon/android-chrome-512x512.png">
     <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
@@ -57,39 +57,62 @@
         </div>
     </nav>
 
-    <main class="mb-5 pb-5 ">
+    <main class="flex-fill">
         <div class="container">
-            <h1>Titulo da pagina</h1>
-            <hr>
-            <p>
-                Caro <strong>Primeiro Nome Do Cliente</strong>
-            </p>
-            <P>
-                Obrigado por se cadastrar em nossa loja vurtyal. Um e-mail de Confirmação foi enviado para <b>
-                    cliente@email.com</b>. Clique no link de confirmação presente no e-mail para concluirmos seu
-                cadastro.
-            </P>
-            <p>
-                Desde já, agradecemos pela confiança em nossos serviços.
-            </p>
-            <p>
-                Cordialmente, <br/>
-                Central de Relacionamentos SPORTWEEB.
-            </p>
-            <p>
-                <a href="/index.html" class="btn btn-danger">Voltar à Página Principal</a>
-            </p>
+            <h1>Minha Conta</h1>
+            <div class="row gx-3">
+                <div class="col-4">
+                    <div class="list-group">
+                        <a href="/cliente_dados.html" class="list-group-item list-group-item-action bg-success text-light">
+                            <i class="bi-person fs-6"></i> Dados Pessoais
+                        </a>
+                        <a href="/cliente_contatos.html" class="list-group-item list-group-item-action">
+                            <i class="bi-mailbox fs-6"></i> Contatos
+                        </a>
+                        <a href="/cliente_endereco.html" class="list-group-item list-group-item-action">
+                            <i class="bi-house-door fs-6"></i> Endereço
+                        </a>
+                        <a href="/cliente_pedidos.html" class="list-group-item list-group-item-action">
+                            <i class="bi-truck fs-6"></i> Pedidos
+                        </a>
+                        <a href="/cliente_favoritos.html" class="list-group-item list-group-item-action">
+                            <i class="bi-heart fs-6"></i> Favoritos
+                        </a>
+                        <a href="/cliente_senha.html" class="list-group-item list-group-item-action">
+                            <i class="bi-lock fs-6"></i> Alterar Senha
+                        </a>
+                        <a href="/index.html" class="list-group-item list-group-item-action">
+                            <i class="bi-door-open fs-6"></i> Sair
+                        </a>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <form action="">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" type="text" id="txtNome" placeholder=" " autofocus />
+                            <label for="txtNome">Nome</label>
+                        </div>
+                        <div class="form-floating mb-3 col-md-6 col-xl-4">
+                            <input class="form-control" type="text" id="txtCPF" placeholder=" " />
+                            <label for="txtCPF">CPF</label>
+                        </div>
+                        <div class="form-floating mb-3 col-md-6 col-xl-4">
+                            <input class="form-control" type="date" id="txtDataNascimento" placeholder=" " />
+                            <label for="txtDataNascimento">Data de Nascimento</label>
+                        </div>
+                    </form> 
+                </div>
+            </div>
         </div>
-
     </main>
 
-    <footer class="border-top text-muted bg-success">
+
+    <footer class="fixed-bottom border-top text-muted bg-success">
         <div class="container">
             <div class="row py-3">
                 <div class="col-12 col-md-4 text-center text-light">
                     &copy; 2023 - SPORTWEEB<br>
-                    Rua tal , 000, Cidade/Estado <br>
-                    CPNJ 99.999.999/0001-99
+                    Rua Dominicio Gabriel de Vasconcelos , 397, Belo Horizonte - MG <br>
                 </div>
                 <div class="col-12 col-md-4 text-center">
                     <a href="/privacidade.html" class="text-decoration-none text-light">
